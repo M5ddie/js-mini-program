@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Checker</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <!-- Integer Checker -->
+        <div class="integerDiv">
+            <h3>Integers</h3>
+            <Form action="#" method="#">
+                <label for="inputInteger">Please enter an Integer</label>
+                <input type="number" id="inputInteger">
+                <button type="submit" onclick="checkInteger()">Submit</button>
+            </Form>
+            <span>Result:</span>
+            <span id="outputNegPos" class="result">Positive or Negative</span>
+        </div>
+    
+    
+        <!-- Odd or Even Checker -->
+        <div class="oddEvenDiv">
+            <h3>Odd or Even</h3>
+            <Form action="#" method="#">
+                <label for="inputOddEven">Please enter a number</label>
+                <input type="number" id="inputOddEven">
+                <button type="submit" onclick="checkOddEven()">Submit</button>
+            </Form>
+            <span>Result:</span>
+            <span id="outputOddEven" class="result">Odd or Even</span>
+        </div>
+    
+        <!-- Voters Checker -->
+        <div class="eligibleDiv">
+            <h3>Voting Eligibility</h3>
+            <Form action="#" method="#">
+                <label for="inputAge">Age</label>
+                <input type="number" id="inputAge">
+    
+                <p>
+                    <span>Born / Naturalized Filipino?</span>
+                    <input type="radio" id="inputYes" name="citizenship" value="Yes">
+                    <label for="">Yes</label>
+                    <input type="radio" id="inputNo" name="citizenship" value="No">
+                    <label for="">No</label>
+                </p>
+                
+    
+                <label for="">Length of Residency</label>
+                <input type="number" id="inputYearsResidence">
+    
+                <button type="submit" onclick="checkEligibility()">Submit</button>
+            </Form>
+            <span>Result:</span>
+            <span id="outputEligibility" class="result">Eligible or Not</span>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
